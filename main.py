@@ -45,8 +45,7 @@ COLLECTION_NAME   = os.getenv("COLLECTION_NAME", "5gnu_knowledge").strip()
 
 # 兜底 Key
 if not DEEPSEEK_API_KEY:
-    DEEPSEEK_API_KEY = "sk-73eaa93b6a334508a42408121d3a28d4"
-    logger.warning("⚠️  .env 未读到 KEY，已使用内置备用 Key")
+    raise ValueError("严重错误：未能获取到 DEEPSEEK_API_KEY，请检查环境变量配置！")
 
 # Top-K 检索，不设分数阈值
 RETRIEVER_K = 5
