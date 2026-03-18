@@ -1,0 +1,32 @@
+# ── Core LangChain ──────────────────────────────
+langchain==0.2.16
+langchain-community==0.2.16
+langchain-core==0.2.38
+langchain-chroma
+langchain-huggingface
+
+# ── Vector Store ────────────────────────────────
+chromadb==0.5.3
+
+# ── Embedding Model ─────────────────────────────
+sentence-transformers==3.0.1
+
+# ── Document Readers ────────────────────────────
+PyMuPDF==1.24.7
+python-docx==1.1.2
+
+# ── Web Scraping ────────────────────────────────
+requests==2.32.3
+beautifulsoup4==4.12.3
+lxml==5.2.2
+
+# ── FastAPI & Server ────────────────────────────
+fastapi
+uvicorn[standard]
+openai
+
+# ── Environment & Utils ─────────────────────────
+python-dotenv==1.0.1
+tqdm==4.66.4
+huggingface-hub==0.24.5
+transformers==4.43.3
